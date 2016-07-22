@@ -121,4 +121,7 @@ html, body {
     color: white;
     margin-left: 10px; }
 
+.gallery-img {
+  height: 350px; }
+
 /*# sourceMappingURL=application.css.map */
