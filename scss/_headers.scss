@@ -7,8 +7,7 @@
     height: 200px;
     align-items: center;
     justify-content: center;
-
-
+    @extend %logo;
   }
 
   .header-nav {
@@ -17,23 +16,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @extend %link;
 
-    ul {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 0px;
-    }
-
-    li {
-      display: inline;
-    }
+    @extend %nav-structure;
 
     li:hover {
       text-decoration: none;
     }
 
     a {
+      color: white;
       text-decoration: none;
     }
   }

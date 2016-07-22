@@ -8,12 +8,72 @@
 html, body {
   margin: 0px; }
 
+.header .header-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  color: white;
+  text-transform: uppercase; }
+
+.header .header-nav {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase; }
+
+.subhero {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.35em;
+  color: white;
+  text-transform: uppercase; }
+
+.hero {
+  font-family: 'Playfair Display', serif;
+  font-size: 6em;
+  color: white;
+  text-transform: uppercase; }
+
+.gallery-nav-links a {
+  font-family: sans-serif;
+  color: #fafafa;
+  font-size: 1em; }
+
+.gallery-nav-search {
+  font-family: sans-serif;
+  color: #fafafa;
+  font-size: 1.25em; }
+
+.header .header-nav ul, .gallery-nav-links ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px; }
+.header .header-nav li, .gallery-nav-links li {
+  display: inline; }
+
 .splash {
   width: 100%;
   height: 100vh;
-  background-image: url("./../img/aurora.jpg");
-  background-position: center;
+  background: linear-gradient(black, transparent 90%), url("./../img/aurora.jpg") no-repeat center;
   background-size: cover; }
+
+.hero-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.subhero {
+  margin-top: 50px;
+  margin-bottom: 0px; }
+
+.hero {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.break-line {
+  width: 25%;
+  border-top: 3px solid white;
+  margin-top: 10px; }
 
 .header {
   display: flex; }
@@ -29,16 +89,36 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .header .header-nav ul {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 0px; }
-    .header .header-nav li {
-      display: inline; }
     .header .header-nav li:hover {
       text-decoration: none; }
     .header .header-nav a {
+      color: white;
       text-decoration: none; }
+
+.gallery-nav {
+  width: 100%;
+  height: 100px;
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.gallery-nav-links {
+  width: 30%;
+  margin-left: 75px; }
+  .gallery-nav-links a {
+    text-decoration: none; }
+
+.gallery-nav-search {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 75px; }
+  .gallery-nav-search .search-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 10px; }
 
 /*# sourceMappingURL=application.css.map */
