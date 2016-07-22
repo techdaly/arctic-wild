@@ -42,6 +42,12 @@ html, body {
   color: #fafafa;
   font-size: 1.25em; }
 
+.gallery-img .img-tag {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  color: white;
+  text-transform: uppercase; }
+
 .header .header-nav ul, .gallery-nav-links ul {
   width: 100%;
   display: flex;
@@ -121,7 +127,89 @@ html, body {
     color: white;
     margin-left: 10px; }
 
+.gallery-row {
+  display: flex;
+  width: 100%; }
+  @media only screen and (max-width: 940px) {
+    .gallery-row {
+      flex-direction: column; } }
+
 .gallery-img {
-  height: 350px; }
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .gallery-img .break-line-sm {
+    width: 45px;
+    border-bottom: orange 5px solid;
+    margin-left: 25px; }
+  .gallery-img .img-tag {
+    margin-left: 25px; }
+
+#raft {
+  background-image: url("../img/raft.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 941px) {
+    #raft {
+      width: 50%; } }
+  @media only screen and (max-width: 940px) {
+    #raft {
+      width: 100%; } }
+
+#base-camp {
+  background-image: url("../img/base-camp.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 941px) {
+    #base-camp {
+      width: 25%; } }
+  @media only screen and (max-width: 940px) {
+    #base-camp {
+      width: 100%; } }
+
+#backpacking {
+  background-image: url("../img/backpacking.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 941px) {
+    #backpacking {
+      width: 25%; } }
+  @media only screen and (max-width: 940px) {
+    #backpacking {
+      width: 100%; } }
+
+#canoe {
+  background-image: url("../img/canoe.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 941px) {
+    #canoe {
+      width: 25%; } }
+  @media only screen and (max-width: 940px) {
+    #canoe {
+      width: 100%; } }
+
+#photo {
+  background-image: url("../img/photo.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 941px) {
+    #photo {
+      width: 25%; } }
+  @media only screen and (max-width: 940px) {
+    #photo {
+      width: 100%; } }
+
+#custom {
+  background-image: url("../img/custom.jpg");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 941px) {
+    #custom {
+      width: 50%; } }
+  @media only screen and (max-width: 940px) {
+    #custom {
+      width: 100%; } }
 
 /*# sourceMappingURL=application.css.map */
