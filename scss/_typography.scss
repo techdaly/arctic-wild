@@ -20,6 +20,9 @@
   font-size: 1.35em;
   color: white;
   text-transform: uppercase;
+  @media only screen and (max-width: 665px) {
+    font-size: 1em;
+  }
 }
 
 %hero {
@@ -27,6 +30,10 @@
   font-size: 6em;
   color: white;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 665px) {
+    font-size: 3em;
+  }
 }
 
 %small-link {

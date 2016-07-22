@@ -25,12 +25,18 @@ html, body {
   font-size: 1.35em;
   color: white;
   text-transform: uppercase; }
+  @media only screen and (max-width: 665px) {
+    .subhero {
+      font-size: 1em; } }
 
 .hero {
   font-family: 'Playfair Display', serif;
   font-size: 6em;
   color: white;
   text-transform: uppercase; }
+  @media only screen and (max-width: 665px) {
+    .hero {
+      font-size: 3em; } }
 
 .gallery-nav-links a {
   font-family: sans-serif;
@@ -53,6 +59,10 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding-left: 0px; }
+  @media only screen and (max-width: 454px) {
+    .header .header-nav ul, .gallery-nav-links ul {
+      flex-flow: column;
+      align-items: center; } }
 .header .header-nav li, .gallery-nav-links li {
   display: inline; }
 
@@ -83,12 +93,20 @@ html, body {
 
 .header {
   display: flex; }
+  @media only screen and (max-width: 700px) {
+    .header {
+      flex-flow: column;
+      justify-content: center; } }
   .header .header-logo {
     display: flex;
     width: 30%;
     height: 200px;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 700px) {
+      .header .header-logo {
+        width: 100%;
+        height: auto; } }
   .header .header-nav {
     width: 60%;
     height: 200px;
@@ -100,6 +118,12 @@ html, body {
     .header .header-nav a {
       color: white;
       text-decoration: none; }
+    @media only screen and (max-width: 700px) {
+      .header .header-nav {
+        width: 100%;
+        height: auto;
+        padding-right: 10px;
+        padding-left: 10px; } }
 
 .gallery-nav {
   width: 100%;
@@ -108,10 +132,22 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 454px) {
+    .gallery-nav {
+      height: auto; } }
+  @media only screen and (max-width: 1035px) {
+    .gallery-nav {
+      flex-flow: column-reverse; } }
 
 .gallery-nav-links {
-  width: 30%;
   margin-left: 75px; }
+  @media only screen and (min-width: 1036px) {
+    .gallery-nav-links {
+      width: 30%; } }
+  @media only screen and (max-width: 1035px) {
+    .gallery-nav-links {
+      width: 80%;
+      margin-left: 0px; } }
   .gallery-nav-links a {
     text-decoration: none; }
 
@@ -121,6 +157,11 @@ html, body {
   justify-content: flex-end;
   align-items: center;
   margin-right: 75px; }
+  @media only screen and (max-width: 1035px) {
+    .gallery-nav-search {
+      justify-content: center;
+      width: 80%;
+      margin-right: 0px; } }
   .gallery-nav-search .search-icon {
     width: 20px;
     height: 20px;
