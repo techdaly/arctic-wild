@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+
+  .header-logo {
+    display: flex;
+    width: 30%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .header-nav {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0px;
+    }
+
+    li {
+      display: inline;
+    }
+
+    li:hover {
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
