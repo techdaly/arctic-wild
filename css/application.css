@@ -179,13 +179,23 @@ html, body {
   height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  transition: all 1s; }
   .gallery-img .break-line-sm {
     width: 45px;
     border-bottom: orange 5px solid;
-    margin-left: 25px; }
+    margin-left: 25px;
+    transition: all 1s; }
   .gallery-img .img-tag {
     margin-left: 25px; }
+
+.gallery-img:hover {
+  opacity: .8;
+  cursor: pointer;
+  transition-timing: ease-in-out; }
+  .gallery-img:hover .break-line-sm {
+    transform: rotate(90deg);
+    transition-timing: ease-in-out; }
 
 #raft {
   background-image: url("../img/raft.jpg");
