@@ -118,6 +118,8 @@ html, body {
     .header .header-nav a {
       color: white;
       text-decoration: none; }
+    .header .header-nav a:hover {
+      color: orange; }
     @media only screen and (max-width: 700px) {
       .header .header-nav {
         width: 100%;
@@ -150,6 +152,8 @@ html, body {
       margin-left: 0px; } }
   .gallery-nav-links a {
     text-decoration: none; }
+  .gallery-nav-links a:hover {
+    color: orange; }
 
 .gallery-nav-search {
   width: 30%;
